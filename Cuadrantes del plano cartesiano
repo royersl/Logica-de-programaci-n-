@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    double x, y;
+    
+    cout << "Ingresa la coordenada X: ";
+    cin >> x;
+    cout << "Ingresa la coordenada Y: ";
+    cin >> y;
+    
+    if (x > 0 && y > 0) {
+        cout << "El punto se encuentra en el Primer Cuadrante (I)." << endl;
+    } else if (x < 0 && y > 0) {
+        cout << "El punto se encuentra en el Segundo Cuadrante (II)." << endl;
+    } else if (x < 0 && y < 0) {
+        cout << "El punto se encuentra en el Tercer Cuadrante (III)." << endl;
+    } else if (x > 0 && y < 0) {
+        cout << "El punto se encuentra en el Cuarto Cuadrante (IV)." << endl;
+    } else if (x == 0 && y == 0) {
+        cout << "El punto esta en el Origen (0,0)." << endl;
+    } else if (x == 0) {
+        cout << "El punto esta sobre el Eje Y." << endl;
+    } else {
+        cout << "El punto esta sobre el Eje X." << endl;
+    }
+    
+    return 0;
+}
