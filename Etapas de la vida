@@ -1,0 +1,24 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    
+
+    int edad;
+    cin >> edad;
+
+    if (edad >= 0 && edad <= 3) 
+     { cout << "bebe";}
+    else if ( edad >= 4 && edad <= 14) 
+     {   cout << "niño";}
+     else if ( edad >= 15 && edad<= 18) 
+     { cout << "joven";}
+     else if (edad >= 19 && edad <= 64) 
+     {  cout << "adulto";}
+     else if (edad >= 65) 
+     {  cout << "adulto de la tercera edad\n";}
+    
+
+    return 0;
+}
