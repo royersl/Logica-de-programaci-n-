@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int edad;
+
+    cout << "Ingrese su edad: ";
+    cin >> edad;
+
+    bool esMayor = (edad >= 18);
+
+    if (esMayor)
+        cout << "Acceso VIP permitido." << endl;
+    else
+        cout << "Acceso denegado: solo mayores de edad." << endl;
+
+    return 0;
+}
